@@ -76,7 +76,7 @@ class MIMEMessage
     end
 
     def parse_rhs(str)
-      a = str.split(/;+\s+/)
+      a = str.split(/;+\s*/)
       header = Header.new
       header.str = str
       header.root = a.shift
